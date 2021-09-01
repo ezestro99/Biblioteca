@@ -7,7 +7,8 @@ public class Ejemplar {
     private String signatura;
     private Integer canDiasPrestamo;
     private boolean estado;
-
+    
+    
     @Override
     public String toString() {
         return "Ejemplar{" + "nroEjemplar=" + nroEjemplar + ", signatura=" + signatura + ", canDiasPrestamo=" + canDiasPrestamo + ", estado=" + estado + '}';

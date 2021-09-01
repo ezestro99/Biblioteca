@@ -1,24 +1,40 @@
 
 package ejerbiblioteca;
 
+import java.util.ArrayList;
+
 
 public class Persona {
     private Integer dni;
     private String nom;
     private String apel;
     private String fecnac;
+    ArrayList <Prestamo> prestamo;
 
-    @Override
-    public String toString() {
-        return "Persona{" + "dni=" + dni + ", nom=" + nom + ", apel=" + apel + ", fecnac=" + fecnac + '}';
-    }
-
-    public Persona(Integer dni, String nom, String apel, String fecnac) {
+    public Persona(Integer dni, String nom, String apel, String fecnac, ArrayList<Prestamo> prestamo) {
         this.dni = dni;
         this.nom = nom;
         this.apel = apel;
         this.fecnac = fecnac;
+        this.prestamo = prestamo;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "dni=" + dni + ", nom=" + nom + ", apel=" + apel + ", fecnac=" + fecnac + ", prestamo=" + prestamo + '}';
+    }
+    
+    
+
+    public ArrayList<Prestamo> getPrestamo() {
+        return prestamo;
+    }
+
+    public void setPrestamo(ArrayList<Prestamo> prestamo) {
+        this.prestamo = prestamo;
+    }
+
+    
 
     
     public Integer getDni() {
@@ -53,7 +69,6 @@ public class Persona {
         this.fecnac = fecnac;
     }
        
-    
-    
+  
     
 }
