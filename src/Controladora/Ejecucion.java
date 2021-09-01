@@ -27,7 +27,7 @@ public class Ejecucion {
     control.agregarEjemplar(1, "asdasda", 3, true);
     control.agregarEjemplar(1, "asdasda", 3, true);
     
-        System.out.println("hola");
+   
     
     }
 }
